@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandip - Frontend Developer & Designer</title>
+    <!-- Add to head section -->
+    <meta name="keywords" content="frontend developer, web designer, graphic designer, python programmer, Nepal developer">
+    <meta property="og:title" content="Sandip - Frontend Developer & Designer">
+    <meta property="og:description" content="Professional portfolio of Sandip - Frontend Developer, Python Programmer, and Graphic Designer">
+    <meta property="og:image" content="/path-to-your-image.jpg">
+    <meta name="description" content="Professional portfolio of Sandip - Frontend Developer, Python Programmer, and Graphic Designer">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/portfolio-styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar" id="navbar" aria-label="Main navigation">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <span class="logo-text">Portfolio.</span>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#portfolio" class="nav-link">Projects</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="nav-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero" aria-labelledby="hero-heading">
+            <div class="hero-canvas" id="hero-canvas"></div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title" id="hero-heading">
+                        Hi, I'm <span class="highlight">Sandip</span>
+                    </h1>
+                    <div class="typing-container" aria-live="polite">
+                        <span class="typing-text" id="typing-text"></span>
+                        <span class="cursor" aria-hidden="true">|</span>
+                    </div>
+                    <p class="hero-description">
+                        Frontend Developer • Python Programmer • Graphic Designer
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                       <a href="/docs/resume99.pdf.pdf" class="btn btn-secondary" download="Sandip Shrestha's Resume.pdf">
+                            <i class="fas fa-download" aria-hidden="true"></i> Download Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator" aria-hidden="true">
+                <div class="scroll-line"></div>
+                <span>Scroll Down</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about" aria-labelledby="about-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" id="about-heading">About Me</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-card">
+                        <div class="profile-card">
+                            <div class="profile-image">
+                                <img src="/B&W sandip pp.jpg" alt=""> 
+                                     alt="Profile" 
+                                     id="profile-img"
+                                     loading="lazy"
+                                     width="300"
+                                     height="300">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <h3>Frontend Developer & Creative Designer</h3>
+                        <p>I'm a passionate developer with expertise in modern web technologies and creative design. I love creating beautiful, functional websites and applications that provide exceptional user experiences.</p>
+                        
+                        <div class="skills-container">
+                            <h4>Technical Skills</h4>
+                            <div class="skill-item">
+                                <span class="skill-name">HTML/CSS/JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Graphic Design</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Figma</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="55"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    <!-- Projects Section -->
+        <section id="portfolio" class="portfolio" aria-labelledby="portfolio-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" id="portfolio-heading">My Projects</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="design">Design</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend</button>
+                    <button class="filter-btn" data-filter="python">Python</button>
+                </div>
+
+                <div class="portfolio-grid">
+                    <!-- Project 1 - School Website -->
+                    <div class="portfolio-item" data-category="frontend" data-project="school-website">
+                        <div class="portfolio-card">
+                            <div class="local-badge">Local Project</div>
+                            <div class="portfolio-image12">
+                                <img src="/school.png" 
+                                    alt="School Website" 
+                                    loading="lazy">
+                            </div>
+                            <div class="portfolio-overlay">
+                                <h3>School Website</h3>
+                                <p>My first website project - built with HTML/CSS/JavaScript and PHP</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link" aria-label="View Details">
+                                        <i class="fas fa-eye" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 - Trek Poster Design -->
+                    <div class="portfolio-item" data-category="design" data-project="trek-poster">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image11">
+                                <img src="/trek poster.jpg" 
+                                    alt="Trek Poster Design" 
+                                    loading="lazy">
+                            </div>
+                            <div class="portfolio-overlay">
+                                <h3>Trek Poster Design</h3>
+                                <p>Creative travel poster designed using Canva's design tools</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link" aria-label="View Details">
+                                        <i class="fas fa-eye" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 - Pizza Promotional Poster -->
+                    <div class="portfolio-item" data-category="design" data-project="pizza-poster">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image11">
+                                <img src="/Cheesy..png" 
+                                    alt="Pizza Promotional Poster" 
+                                    loading="lazy">
+                            </div>
+                            <div class="portfolio-overlay">
+                                <h3>Pizza Promotional Poster</h3>
+                                <p>Appetizing food advertisement created with Photoshop</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link" aria-label="View Details">
+                                        <i class="fas fa-eye" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 - Football Player Design -->
+                    <div class="portfolio-item" data-category="design" data-project="football-poster">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image11">
+                                <img src="/footballer poster'.png" 
+                                    alt="Football Player Design" 
+                                    loading="lazy">
+                            </div>
+                            <div class="portfolio-overlay">
+                                <h3>Football Player Design</h3>
+                                <p>Sports-themed graphic design project featuring football athletes</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link" aria-label="View Details">
+                                        <i class="fas fa-eye" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 - AI Voice Assistant -->
+                    <div class="portfolio-item" data-category="python" data-project="ai-assistant">
+                        <div class="portfolio-card">
+                            <div class="local-badge">Local Project</div>
+                            <div class="portfolio-image11">
+                                <img src="/ai gpt.jpg" 
+                                    alt="AI Voice Assistant" 
+                                    loading="lazy">
+                            </div>
+                            <div class="portfolio-overlay">
+                                <h3>AI Voice Assistant</h3>
+                                <p>Python-based voice recognition and response system</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link" aria-label="View Details">
+                                        <i class="fas fa-eye" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- Project Modals -->
+
+        <!-- School Website Modal -->
+        <div id="school-website-modal" class="project-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">School Website Project</h2>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-hero">
+                        <img src="/school.png" alt="School Website">
+                    </div>
+                    <div class="project-details">
+                        <div class="project-overview">
+                            <h3>Project Overview</h3>
+                            <p>This was my first major web development project - a comprehensive website for a local school. The website features a responsive design, admin panel for content management, event calendar, and contact forms.</p>
+                        </div>
+                        
+                        <div class="key-features">
+                            <h3>Key Features</h3>
+                            <div class="features-grid">
+                                <div class="feature-item">
+                                    <h4>Responsive Design</h4>
+                                    <p>Works perfectly on all devices from mobile to desktop</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h4>Admin Panel</h4>
+                                    <p>Easy content management system for school staff</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h4>Event Calendar</h4>
+                                    <p>Interactive calendar with registration functionality</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h4>Contact Forms</h4>
+                                    <p>User-friendly forms with validation and spam protection</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="development-process">
+                            <h3>Development Process</h3>
+                            <div class="process-steps">
+                                <div class="process-step">
+                                    <h4>Planning</h4>
+                                    <p>Gathered requirements from school staff and created wireframes</p>
+                                </div>
+                                <div class="process-step">
+                                    <h4>Design</h4>
+                                    <p>Created mockups in Figma and got approval from stakeholders</p>
+                                </div>
+                                <div class="process-step">
+                                    <h4>Development</h4>
+                                    <p>Built the frontend with HTML/CSS/JS and backend with PHP</p>
+                                </div>
+                                <div class="process-step">
+                                    <h4>Testing</h4>
+                                    <p>Tested functionality across devices and browsers</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="technical-details">
+                            <h3>Technical Details</h3>
+                            <p class="tech-details"><strong>Frontend:</strong> HTML5, CSS3, JavaScript (ES6+)</p>
+                            <p class="tech-details"><strong>Backend:</strong> PHP, MySQL</p>
+                            <p class="tech-details"><strong>Libraries:</strong> jQuery, FullCalendar, Lightbox2</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">jQuery</span>
+                            </div>
+                        </div>
+                        
+                        <!-- <div class="project-showcase">
+                            <h3>Website Showcase</h3>
+                            <div class="showcase-content">
+                                <div class="showcase-image">
+                                    <img src="https://placehold.co/800x450/0066ff/ffffff?text=Home+Page" alt="School Website Homepage">
+                                </div>
+                                <div class="showcase-image">
+                                    <img src="https://placehold.co/800x450/00ffaa/000000?text=Events+Page" alt="Events Page">
+                                </div>
+                               
+                        </div> -->
+                    </div>
+                </div>
+                <div class="modal-actions">
+                    <a href="#" class="action-btn secondary">
+                        <i class="fab fa-github"></i> View Code
+                    </a>
+                    <a href="#" class="action-btn primary">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+
+                <!-- Design Project Modal (Trek Poster) -->
+        <div id="trek-poster-modal" class="project-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Trek Poster Design</h2>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-hero-2">
+                        <img class="" src="/trek poster.jpg" alt="Trek Poster Design">
+                    </div>
+                    <div class="project-details">
+                        <div class="project-overview">
+                            <h3>Project Overview</h3>
+                            <p>A creative travel poster designed to promote trekking adventures in the Himalayas. This poster captures the essence of adventure and natural beauty, encouraging outdoor enthusiasts to explore majestic mountain trails.</p>
+                        </div>
+                        
+                        <div class="key-features">
+                            <h3>Design Elements</h3>
+                            <div class="features-grid">
+                                <div class="feature-item">
+                                    <h4>Color Scheme</h4>
+                                    <p>Used earthy tones with contrasting accents to highlight key elements</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h4>Typography</h4>
+                                    <p>Combination of bold headlines and readable body text for hierarchy</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h4>Imagery</h4>
+                                    <p>Stunning landscape photography with careful composition</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h4>Layout</h4>
+                                    <p>Balanced design with clear visual flow and information hierarchy</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="development-process">
+                            <h3>Design Process</h3>
+                            <div class="process-steps">
+                                <div class="process-step">
+                                    <h4>Research</h4>
+                                    <p>Studied similar designs and identified target audience preferences</p>
+                                </div>
+                                <div class="process-step">
+                                    <h4>Conceptualization</h4>
+                                    <p>Created multiple design concepts and mood boards</p>
+                                </div>
+                                <div class="process-step">
+                                    <h4>Execution</h4>
+                                    <p>Developed the final design using Canva's design tools</p>
+                                </div>
+                                <div class="process-step">
+                                    <h4>Refinement</h4>
+                                    <p>Refined details based on feedback and testing</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="technical-details">
+                            <h3>Technical Details</h3>
+                            <p class="tech-details"><strong>Software:</strong> Canva Pro</p>
+                            <p class="tech-details"><strong>Dimensions:</strong> 18 × 24 inches</p>
+                            <p class="tech-details"><strong>Resolution:</strong> 300 DPI</p>
+                            <p class="tech-details"><strong>Color Mode:</strong> CMYK for print, RGB for digital</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Canva</span>
+                                <span class="tech-tag">Graphic Design</span>
+                                <span class="tech-tag">Print Design</span>
+                                <span class="tech-tag">Typography</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-actions">
+                    <button class="action-btn primary view-full-image" data-image-src="/trek poster.jpg">
+                        <i class="fas fa-expand"></i> View Full Image
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Design Project Modal (Pizza Poster) -->
+        <div id="pizza-poster-modal" class="project-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Pizza Poster Design</h2>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-hero-2 ">
+                        <img src="/Cheesy..png" alt="Pizza Poster Design">
+                    </div>
+                    <div class="project-details">
+                        <div class="project-overview">
+                            <h3>Project Overview</h3>
+                            <p>A creative pizza poster designed to promote Cheesy Pizza House. This poster captures the essence of delicious, cheesy pizzas and encourages customers to enjoy a satisfying meal with a friendly, inviting atmosphere.</p>
+                        </div>
+                        
+                        <div class="key-features">
+                            <h3>Design Elements</h3>
+                            <div class="features-grid">
+                                <div class="feature-item">
+                                    <h4>Color Scheme</h4>
+                                    <p>Used warm, appetizing colors with contrasting accents to highlight key elements and make the pizza look delicious</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h4>Typography</h4>
+                                    <p>Combination of bold, playful headlines and readable body text for hierarchy and visual appeal</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h4>Imagery</h4>
+                                    <p>Mouth-watering pizza photography with careful composition to showcase the product</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h4>Layout</h4>
+                                    <p>Balanced design with clear visual flow from headline to call-to-action</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="development-process">
+                            <h3>Design Process</h3>
+                            <div class="process-steps">
+                                <div class="process-step">
+                                    <h4>Research</h4>
+                                    <p>Studied popular pizza marketing designs and identified target audience preferences</p>
+                                </div>
+                                <div class="process-step">
+                                    <h4>Conceptualization</h4>
+                                    <p>Created multiple design concepts focusing on cheesy, appetizing visuals</p>
+                                </div>
+                                <div class="process-step">
+                                    <h4>Execution</h4>
+                                    <p>Developed the final design using Photoshop with careful attention to food styling</p>
+                                </div>
+                                <div class="process-step">
+                                    <h4>Refinement</h4>
+                                    <p>Enhanced details to make the pizza look more delicious and inviting</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="technical-details">
+                            <h3>Technical Details</h3>
+                            <p class="tech-details"><strong>Software:</strong> Adobe Photoshop</p>
+                            <p class="tech-details"><strong>Dimensions:</strong> 18 × 24 inches</p>
+                            <p class="tech-details"><strong>Resolution:</strong> 300 DPI</p>
+                            <p class="tech-details"><strong>Color Mode:</strong> CMYK for print, RGB for digital</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Adobe Photoshop</span>
+                                <span class="tech-tag">Food Photography</span>
+                                <span class="tech-tag">Appetizing Design</span>
+                                <span class="tech-tag">Typography</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-actions">
+                    <button class="action-btn primary view-full-image" data-image-src="/Cheesy..png">
+                        <i class="fas fa-expand"></i> View Full Image
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Design Project Modal (Football Poster) -->
+        <div id="football-poster-modal" class="project-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Football Poster Design</h2>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-hero-2 ">
+                        <img src="/footballer poster'.png" alt="Football Poster Design">
+                    </div>
+                    <div class="project-details">
+                        <div class="project-overview">
+                            <h3>Project Overview</h3>
+                            <p>A dynamic sports poster featuring footballer Viktor Gyokeres. This poster captures the energy and skill of the athlete, celebrating his impressive goal-scoring ability with a powerful, modern design that appeals to sports fans.</p>
+                        </div>
+                        
+                        <div class="key-features">
+                            <h3>Design Elements</h3>
+                            <div class="features-grid">
+                                <div class="feature-item">
+                                    <h4>Color Scheme</h4>
+                                    <p>Used team colors with high-contrast accents to highlight the athlete and create visual impact</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h4>Typography</h4>
+                                    <p>Bold, strong typography that complements the athletic theme with clear hierarchy</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h4>Imagery</h4>
+                                    <p>Action-oriented photography with careful composition to showcase the player's intensity</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h4>Layout</h4>
+                                    <p>Energetic design with dynamic placement of elements to convey movement and power</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="development-process">
+                            <h3>Design Process</h3>
+                            <div class="process-steps">
+                                <div class="process-step">
+                                    <h4>Research</h4>
+                                    <p>Studied sports marketing designs and athlete promotional materials</p>
+                                </div>
+                                <div class="process-step">
+                                    <h4>Conceptualization</h4>
+                                    <p>Created multiple design concepts focusing on action and player identity</p>
+                                </div>
+                                <div class="process-step">
+                                    <h4>Execution</h4>
+                                    <p>Developed the final design using Photoshop with emphasis on dynamic composition</p>
+                                </div>
+                                <div class="process-step">
+                                    <h4>Refinement</h4>
+                                    <p>Enhanced details to emphasize the player's presence and goal-scoring prowess</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="technical-details">
+                            <h3>Technical Details</h3>
+                            <p class="tech-details"><strong>Software:</strong> Adobe Photoshop</p>
+                            <p class="tech-details"><strong>Dimensions:</strong> 18 × 24 inches</p>
+                            <p class="tech-details"><strong>Resolution:</strong> 300 DPI</p>
+                            <p class="tech-details"><strong>Color Mode:</strong> CMYK for print, RGB for digital</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Adobe Photoshop</span>
+                                <span class="tech-tag">Sports Design</span>
+                                <span class="tech-tag">Action Photography</span>
+                                <span class="tech-tag">Athletic Typography</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-actions">
+                    <button class="action-btn primary view-full-image" data-image-src="/footballer poster'.png">
+                        <i class="fas fa-expand"></i> View Full Image
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Full Image Viewer -->
+       
+        <div class="full-image-view">
+            <div class="full-image-wrapper">
+                <div class="full-image-container">
+                    <img id="full-size-image" src="" alt="Full size image">
+                </div>
+            </div>
+            <button class="close-full-view">&times;</button>
+            <div class="image-zoom-controls">
+                <button id="zoom-out" class="zoom-btn">-</button>
+                <span class="current-zoom" id="zoom-level">100%</span>
+                <button id="zoom-in" class="zoom-btn">+</button>
+                <button id="reset-zoom" class="zoom-btn">⟳</button>
+            </div>
+        </div>
+</div>
+
+        <!-- AI Assistant modals -->
+        <div id="ai-assistant-modal" class="project-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">AI Voice Assistant</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-hero">
+                    <img src="/ai gpt.jpg" alt="AI Voice Assistant">
+                </div>
+                <div class="project-details">
+                    <div class="project-overview">
+                        <h3>Project Overview</h3>
+                        <p>A comprehensive Python-based voice assistant that understands speech, processes natural language, and responds to voice commands with both verbal responses and physical actions. This project demonstrates expertise in AI, voice recognition, computer vision, and system automation.</p>
+                    </div>
+                    
+                    
+                    <div class="development-process">
+                        <h3>Development Process</h3>
+                        <div class="process-steps">
+                            <div class="process-step">
+                                <h4>Research & Analysis</h4>
+                                <p>Studied voice assistant architectures, gesture recognition technologies, and system control APIs</p>
+                            </div>
+                            <div class="process-step">
+                                <h4>System Design</h4>
+                                <p>Architected modular system with voice processing, gesture control, and command execution components</p>
+                            </div>
+                            <div class="process-step">
+                                <h4>Implementation</h4>
+                                <p>Developed core functionality using Python with integrated computer vision and AI libraries</p>
+                            </div>
+                            <div class="process-step">
+                                <h4>Testing & Optimization</h4>
+                                <p>Rigorous testing for accuracy, performance optimization, and cross-platform compatibility</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="technical-details">
+                        <h3>Technical Details</h3>
+                        <p class="tech-details"><strong>Programming Language:</strong> Python 3.8+</p>
+                        <p class="tech-details"><strong>Core Libraries:</strong> SpeechRecognition, PyAudio, pyttsx3, OpenCV, MediaPipe</p>
+                        <p class="tech-details"><strong>AI Integration:</strong> Ollama with Llama 2, Custom response mapping</p>
+                        <p class="tech-details"><strong>System Control:</strong> PyAutoGUI, psutil, OS operations</p>
+                        <p class="tech-details"><strong>Platform Support:</strong> Windows, macOS, Linux</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">SpeechRecognition</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">MediaPipe</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">AI Integration</span>
+                            <span class="tech-tag">System Automation</span>
+                            <span class="tech-tag">Computer Vision</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-documentation">
+                        <div class="doc-section">
+                            <div class="doc-header">
+                                <div class="doc-icon">🌟</div>
+                                <h3 class="doc-title">What Can It Do?</h3>
+                            </div>
+                            <div class="doc-content">
+                                <p>A comprehensive voice-controlled assistant that performs tasks through voice commands and hand gestures.</p>
+                            </div>
+                        </div>
+
+                        <div class="doc-section">
+                            <div class="doc-header">
+                                <div class="doc-icon"><i class="fas fa-microphone"></i></div>
+                                <h3 class="doc-title">Talk to Your Computer</h3>
+                            </div>
+                            <div class="doc-content">
+                                <p>Just speak naturally to control your computer:</p>
+                                <div class="feature-grid">
+                                    <div class="feature-card">
+                                        <div class="feature-icon"><i class="fas fa-globe"></i></div>
+                                        <h4 class="feature-title">"Open Apps and Website"</h4>
+                                        <p class="feature-desc">Launches your web browser and open apps, website with a simple voice command</p>
+                                    </div>
+                                    <div class="feature-card">
+                                        <div class="feature-icon"><i class="fas fa-cloud-sun"></i></div>
+                                        <h4 class="feature-title">"What's the weather today?"</h4>
+                                        <p class="feature-desc">Gets current weather forecast for your location</p>
+                                    </div>
+                                    <div class="feature-card">
+                                        <div class="feature-icon"><i class="fas fa-smile"></i></div>
+                                        <h4 class="feature-title">"Tell me a joke"</h4>
+                                        <p class="feature-desc">Brightens your day with humor and fun interactions</p>
+                                    </div>
+                                    <div class="feature-card">
+                                        <div class="feature-icon"><i class="fas fa-power-off"></i></div>
+                                        <h4 class="feature-title">"Shutdown computer"</h4>
+                                        <p class="feature-desc">Safely turns off your PC with voice confirmation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="doc-section">
+                            <div class="doc-header">
+                                <div class="doc-icon"><i class="fas fa-hand-point-up"></i></div>
+                                <h3 class="doc-title">Control with Hand Gestures</h3>
+                            </div>
+                            <div class="doc-content">
+                                <p>Wave your hand to control things without speaking (Webcam Required):</p>
+                                <div class="feature-grid">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">👍</div>
+                                        <h4 class="feature-title">Thumbs Up</h4>
+                                        <p class="feature-desc">Volume Up - Increase system volume</p>
+                                    </div>
+                                    <div class="feature-card">
+                                        <div class="feature-icon">👎</div>
+                                        <h4 class="feature-title">Thumbs Down</h4>
+                                        <p class="feature-desc">Volume Down - Decrease system volume</p>
+                                    </div>
+                                    <div class="feature-card">
+                                        <div class="feature-icon">✌️</div>
+                                        <h4 class="feature-title">Peace Sign</h4>
+                                        <p class="feature-desc">Take Screenshot - Capture current screen</p>
+                                    </div>
+                                    <div class="feature-card">
+                                        <div class="feature-icon">🖐️</div>
+                                        <h4 class="feature-title">Open Palm</h4>
+                                        <p class="feature-desc">Play/Pause - Control media playback</p>
+                                    </div>
+                                    <div class="feature-card">
+                                        <div class="feature-icon">✊</div>
+                                        <h4 class="feature-title">Closed Fist</h4>
+                                        <p class="feature-desc">Mute/Unmute - Toggle audio mute</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="doc-section">
+                            <div class="doc-header">
+                                <div class="doc-icon"><i class="fas fa-mobile-alt"></i></div>
+                                <h3 class="doc-title">Smart Helpers</h3>
+                            </div>
+                            <div class="doc-content">
+                                <ul>
+                                    <li>Get news updates on any topic</li>
+                                    <li>Check time and date instantly</li>
+                                    <li>Set reminders for important tasks</li>
+                                    <li>Analyze what's on your screen and describe it</li>
+                                    <li>Control Bluetooth and brightness settings</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="doc-section">
+                            <div class="doc-header">
+                                <div class="doc-icon"><i class="fas fa-rocket"></i></div>
+                                <h3 class="doc-title">Getting Started</h3>
+                            </div>
+                            <div class="doc-content">
+                                <h4>Easy Installation (3 Steps)</h4>
+                                <div class="step-container">
+                                    <div class="step-item">
+                                        <div class="step-number">1</div>
+                                        <div class="step-content">
+                                            <h4 class="step-title">Download the Assistant</h4>
+                                            <p class="step-desc">Clone the repository from GitHub</p>
+                                            <div class="command-box">git clone https://github.com/yourusername/ai-voice-assistant.git<br>cd ai-voice-assistant</div>
+                                        </div>
+                                    </div>
+                                    <div class="step-item">
+                                        <div class="step-number">2</div>
+                                        <div class="step-content">
+                                            <h4 class="step-title">Install Dependencies</h4>
+                                            <p class="step-desc">Install all required Python packages</p>
+                                            <div class="command-box">pip install -r requirements.txt</div>
+                                        </div>
+                                    </div>
+                                    <div class="step-item">
+                                        <div class="step-number">3</div>
+                                        <div class="step-content">
+                                            <h4 class="step-title">Run the Assistant</h4>
+                                            <p class="step-desc">Start the voice assistant application</p>
+                                            <div class="command-box">python assistant.py</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <h4>First-Time Setup</h4>
+                                <p>The assistant will guide you through:</p>
+                                <ul>
+                                    <li>Microphone setup and testing</li>
+                                    <li>Webcam calibration (for gesture control)</li>
+                                    <li>Voice preference settings</li>
+                                    <li>Optional: Weather location setup</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="doc-section">
+                            <div class="doc-header">
+                                <div class="doc-icon"><i class="fas fa-lightbulb"></i></div>
+                                <h3 class="doc-title">Everyday Use Examples</h3>
+                            </div>
+                            <div class="doc-content">
+                                <h4>For Home Users</h4>
+                                <ul>
+                                    <li>"Open YouTube" - Watch videos hands-free</li>
+                                    <li>"Pause music" - Gesture or voice control</li>
+                                    <li>"What's the news today?" - Morning updates</li>
+                                </ul>
+                                
+                                <h4>For Office Work</h4>
+                                <ul>
+                                    <li>"Open Word document" - Start working quickly</li>
+                                    <li>"Open my email" - Check messages</li>
+                                    <li>"Take screenshot" - Capture important information</li>
+                                    <li>"What's on my screen?" - Read text aloud</li>
+                                </ul>
+                                
+                                <h4>For Students</h4>
+                                <ul>
+                                    <li>"Tell me about quantum physics" - Learning helper</li>
+                                    <li>"Open calculator" - Math homework aid</li>
+                                    <li>"News about technology" - Stay updated</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="doc-section">
+                            <div class="doc-header">                           
+                                <div class="doc-icon"><i class="fas fa-shield"></i></div>
+                                <h3 class="doc-title">Privacy and Security</h3>
+                            </div>
+                            <div class="doc-content">
+                                <ul>
+                                    <li>No internet required for basic functions</li>
+                                    <li>Your data stays private - no cloud recording</li>
+                                    <li>Optional internet features clearly marked</li>
+                                    <li>No registration or account needed</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="doc-section">
+                            <div class="doc-header">
+                                <div class="doc-icon"><i class="fas fa-question-circle"></i></div>
+                                <h3 class="doc-title">Frequently Asked Questions</h3>
+                            </div>
+                            <div class="doc-content">
+                                <div class="faq-container">
+                                    <div class="faq-item">
+                                        <h4 class="faq-question">Is this like Siri or Alexa?</h4>
+                                        <p class="faq-answer">Yes, but it runs on your computer instead of in the cloud, keeping your information private!</p>
+                                    </div>
+                                    <div class="faq-item">
+                                        <h4 class="faq-question">What computers can run this?</h4>
+                                        <p class="faq-answer">Most Windows, Mac, or Linux computers from the last 5 years with a microphone. Webcam needed for gesture control.</p>
+                                    </div>
+                                    <div class="faq-item">
+                                        <h4 class="faq-question">Is it free?</h4>
+                                        <p class="faq-answer">Completely free and open-source forever.</p>
+                                    </div>
+                                    <!-- <div class="faq-item">
+                                        <h4 class="faq-question">Is it safe to use?</h4>
+                                        <p class="faq-answer">Yes! The code is open for anyone to review, and it doesn't send your data to external servers.</p>
+                                    </div> -->
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="doc-section">
+                            <div class="doc-header">
+                                <div class="doc-icon"><i class="fas fa-code"></i></div>
+                                <h3 class="doc-title">For Developers</h3>
+                            </div>
+                            <div class="doc-content">
+                                <p>Interested in how it works or want to contribute?</p>
+                                <ul>
+                                    <li>Built with Python using modern AI libraries</li>
+                                    <li>Modular design makes adding new features easy</li>
+                                    <li>Well-documented code for easy understanding</li>
+                                    <li>Contribution guidelines available on GitHub</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-actions">
+                 <a href="#" class="action-btn primary">
+                    <i class="fas fa-globe"></i> Video Demo
+                </a>
+                <a href="#" class="action-btn secondary">
+                    <i class="fab fa-github"></i> View Code
+                </a>
+                <a href="#" class="action-btn primary">
+                    <i class="fas fa-video"></i> Live Demo
+                </a>
+            </div>
+        </div>
+    </div>
+        <!-- Full Image View -->
+        <div class="full-image-view">
+            <div class="full-image-container">
+                <img src="" alt="Full size design" id="full-size-image">
+                <button class="close-full-view">&times;</button>
+                <div class="zoom-controls">
+                    <button class="zoom-btn" id="zoom-in">
+                        <i class="fas fa-search-plus"></i>
+                    </button>
+                    <button class="zoom-btn" id="zoom-out">
+                        <i class="fas fa-search-minus"></i>
+                    </button>
+                    <button class="zoom-btn" id="reset-zoom">
+                        <i class="fas fa-sync-alt"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Services Section -->
+        <section id="services" class="services" aria-labelledby="services-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" id="services-heading">Services</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <div class="service-icon" aria-hidden="true">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Frontend Development</h3>
+                        <p>Modern, responsive websites built with the latest technologies and best practices.</p>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card">
+                        <div class="service-icon" aria-hidden="true">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>Graphic Design</h3>
+                        <p>Beautiful and intuitive user interfaces that enhance user experience and engagement.</p>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card">
+                        <div class="service-icon" aria-hidden="true">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Data Visualization</h3>
+                        <p>Interactive dashboards and data visualizations to make complex data understandable.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials" aria-labelledby="testimonials-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" id="testimonials-heading">What Clients Say</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="swiper testimonials-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Testimonial 1 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-content">
+                                    <div class="stars" aria-label="5 out of 5 stars">
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <blockquote>
+                                        <p>"Sandip delivered an exceptional website that exceeded our expectations. His attention to detail and creative approach made all the difference."</p>
+                                    </blockquote>
+                                </div>
+                                <div class="testimonial-author">
+                                    <div class="author-image">
+                                        <img src="/Unknown pfp (1).jpg" 
+                                             alt="John Smith"
+                                             loading="lazy"
+                                             width="60"
+                                             height="60">
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>Sudip Shrestha</h4>
+                                        <span>CEO, Ogilvy Nepal</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-content">
+                                    <div class="stars" aria-label="5 out of 5 stars">
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <blockquote>
+                                        <p>"The design work was outstanding. Sandip understood our brand perfectly and translated it into a beautiful digital experience."</p>
+                                    </blockquote>
+                                </div>
+                                <div class="testimonial-author">
+                                    <div class="author-image">
+                                        <img src="/Unknown pfp (1).jpg" 
+                                             alt="Sarah Johnson"
+                                             loading="lazy"
+                                             width="60"
+                                             height="60">
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>Ram Bahadur</h4>
+                                        <span>Director, Ogilvy Nepal</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-content">
+                                    <div class="stars" aria-label="5 out of 5 stars">
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <blockquote>
+                                        <p>"Working with Sandip was a pleasure. He delivered our Python application ahead of schedule and with excellent documentation."</p>
+                                    </blockquote>
+                                </div>
+                                <div class="testimonial-author">
+                                    <div class="author-image">
+                                        <img src="/Unknown pfp (1).jpg" 
+                                             alt="Michael Chen"
+                                             loading="lazy"
+                                             width="60"
+                                             height="60">
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>John Snow</h4>
+                                        <span>CTO, Fusemachines Nepal</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 4 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-content">
+                                    <div class="stars" aria-label="5 out of 5 stars">
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <blockquote>
+                                        <p>"The responsive design work was flawless across all devices. Sandip's technical expertise is truly impressive."</p>
+                                    </blockquote>
+                                </div>
+                                <div class="testimonial-author">
+                                    <div class="author-image">
+                                        <img src="/Unknown pfp (1).jpg" alt="">
+                                             loading="lazy"
+                                             width="60"
+                                             height="60">
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>Pepe Parsad</h4>
+                                        <span>Product Manager, Daraz Nepalt</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 5 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-content">
+                                    <div class="stars" aria-label="5 out of 5 stars">
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <blockquote>
+                                        <p>"We've worked with many developers, but Sandip stands out for his creativity and problem-solving skills."</p>
+                                    </blockquote>
+                                </div>
+                                <div class="testimonial-author">
+                                    <div class="author-image">
+                                        <img src="/Unknown pfp (1).jpg" 
+                                             alt="David Wilson"
+                                             loading="lazy"
+                                             width="60"
+                                             height="60">
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>David Miller</h4>
+                                        <span>Founder, Web Experts Nepal </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact" aria-labelledby="contact-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" id="contact-heading">Get In Touch</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon" aria-hidden="true">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:sandip@example.com">sandip.stha343@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon" aria-hidden="true">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <a href="tel:+9779847365197">+977 9847365197</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon" aria-hidden="true">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <address>Nayabazar, KTM-16</address>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="visually-hidden">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="visually-hidden">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="visually-hidden">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="visually-hidden">Your Message</label>
+                            <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; <span id="current-year"></span> Sandip. All rights reserved.</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="GitHub profile">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="http://linkedin.com/in/sandi
+p-shrestha-9a4881287/" class="social-link" aria-label="LinkedIn profile">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://wa.link/896zgh" class="social-link" aria-label="Behance portfolio">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.facebook.com/cy%20%20cusboy.sudip" class="social-link" aria-label="Dribbble profile">
+                        <i class="fab fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+                <i class="fas fa-chevron-up" aria-hidden="true"></i>
+            </button>
+        </div>
+    </footer>
+    
+    <!-- Project Modal - Add this right before the scripts -->
+    <div class="project-modal" id="project-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img id="modal-image" src="" alt="Project Screenshot">
+            <h2 id="modal-title">Project Title</h2>
+            <p id="modal-description">Project description here...</p>
+            <div class="modal-links">
+                <a id="modal-github" href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+                <a id="modal-demo" href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="portfolio-script.js"></script>
+</body>
+</html>
